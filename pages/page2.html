@@ -40,8 +40,8 @@
         <div class="container">
             <ul>
                 <li><a href="../index.html">Главная</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="page2.html">Подбор запчастей</a></li>
+                <li><a href="page1.html">О компании</a></li>
+                <li><a href="#">Подбор запчастей</a></li>
                 <li><a href="page3.html">Галерея</a></li>
                 <li><a href="page4.html">Контакты</a></li>
             </ul>
@@ -49,23 +49,44 @@
 
     </nav>
 
-    <main class="main">
+    <main class="main vendor">
         <div class="container">
             <div>
-                <h3>О КОМПАНИИ</h3>
+                <h3>ПОИСК АВТОЗАПЧАСТЕЙ</h3>
             </div>
-            <div>
-                <p class="aboutcompany">
-                    Компания FYAP(ForYouAutoParts) основана в Минской области в 2005 году, первоначальный вид
-                    деятельности был направлен на оптовую продажу товаров автомобильной тематики. Так как основная доля
-                    рынка страны состоит из европейских производителей автомобилей, направление на расширение
-                    номенклатуры было именно в эту сферу автозапчастей. С 2006 года работа с потенциальными клиентами
-                    проходила со штатом 32 сотрудника и складских помещений площадью 1000 м2. Общее число активной
-                    клиентской базы уже на 2011 год — это 1100 контрагентов в составе которых оптовые компании,
-                    розничные ТТ, предприятия и т. д., Проделав огромную работу, компания FYAP имеет статусы дилера и
-                    официального поставщика.
-                </p>
-            </div>
+            <form method="POST">
+                <fieldset class="block">
+                    <legend>Форма для самостоятельного поиска</legend>
+                    <div class="field">
+                        Введите арктикул для поиска:<br />
+                        <input placeholder="Введите арктикул" required type="text" name="vendorcod" />
+                    </div>
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Очистить форму</button>
+                </fieldset>
+                <fieldset class="block">
+                    <legend>Если не нашли нужную деталь, оставьте свои данные и мы с Вами свяжемся</legend>
+                    <div class="field">
+                        Телефон<br />
+                        <input placeholder="375(__)___ __ __" required type="tel" name="phone" />
+                    </div>
+                    <div class="field">
+                        Эл.почта<br />
+                        <input placeholder="name@gmail.com" type="email" name="email" />
+                    </div>
+                    <div class="field">
+                        Прикрепите фото нужной автозапчасти<br />
+                        <input type="file" name="file" />
+                    </div>
+                </fieldset>
+                <div class="field">
+                    <input required type="checkbox" name="confirm" /> - Данные внесены верно, подтверждаю отправку
+                </div>
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить форму</button>
+            </form>
+            </section>
+        </div>
         </div>
     </main>
 
@@ -84,5 +105,6 @@
             </p>
         </div>
     </footer>
+
 </body>
 </html>
